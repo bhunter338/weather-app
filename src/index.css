@@ -4,12 +4,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5);
+}
+html {
+  height: 100%;
 }
 
 body {
   font-family: "Fira Sans", sans-serif;
-
+  color: #e6e7eb;
+  height: 100%;
   background-color: #282c34;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 118px 173px 1fr 60px;
+  height: 100%;
 }
 
 li,
@@ -26,6 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+  /* margin-bottom: 2rem; */
 }
 
 .logo {
@@ -51,7 +67,7 @@ header {
 .nav-links li a:hover {
   color: #0088a9;
 }
-button {
+.cta button {
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -68,4 +84,43 @@ button:hover {
 h1 {
   color: rgba(0, 136, 169, 1);
   font-size: 3rem;
+}
+
+.footer-link {
+  font-size: 1rem;
+}
+.searchBar {
+  /* margin-top: 2rem; */
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+}
+.search input {
+  height: 100%;
+  width: 435px;
+  border: none;
+}
+
+.search-btn {
+  background: rgba(0, 136, 169, 1) url(../public/img/icon-search.png) no-repeat;
+  width: 58px;
+  height: 100%;
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 0;
+  background-position: center;
+  cursor: pointer;
+}
+
+.search input[type="text"] {
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
