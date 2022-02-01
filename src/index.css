@@ -124,3 +124,31 @@ h1 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.cardContainer {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.6);
+  background: #e6e7eb;
+  color: #282c34;
+  border-radius: 20px;
+
+  padding: 40px 40px;
+}
+
+.city {
+  font-size: 2rem;
+}
+
+.temp {
+  font-size: 5rem;
+}

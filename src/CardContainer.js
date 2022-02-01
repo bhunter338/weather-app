@@ -1,7 +1,12 @@
 import React from "react";
+import Card from "./Card";
 
 const CardContainer = () => {
-  return <div className="cardContainer">Card Container</div>;
+  return (
+    <div className="cardContainer">
+      <Card></Card>
+    </div>
+  );
 };
 
 export default CardContainer;
