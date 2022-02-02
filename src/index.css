@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Roboto+Slab:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
 
 * {
   box-sizing: border-box;
@@ -130,6 +131,7 @@ h1 {
   padding-top: 3rem;
   padding-bottom: 3rem;
   justify-content: center;
+  gap: 4rem;
 }
 
 .card {
@@ -141,14 +143,37 @@ h1 {
   background: #e6e7eb;
   color: #282c34;
   border-radius: 20px;
-
+  width: 16rem;
   padding: 40px 40px;
 }
 
 .city {
   font-size: 2rem;
+  align-self: center;
+  margin-bottom: 1rem;
 }
 
 .temp {
   font-size: 5rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.card img {
+  height: 120px;
+  width: 120px;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.description {
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.date {
+  font-family: "Fira Sans Condensed", sans-serif;
+  align-self: center;
+  text-align: center;
 }
