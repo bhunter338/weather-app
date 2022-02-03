@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ handleSubmit }) => {
+  const [city, setCity] = useState("");
   return (
     <div className="searchBar">
-      <div className="search">
-        <input type="text" placeholder="Enter a city eg. Istanbul" />
+      <form className="search" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={city}
+          placeholder="Enter a city eg. Istanbul"
+        />
         <button className="search-btn"></button>
-      </div>
+      </form>
     </div>
   );
 };

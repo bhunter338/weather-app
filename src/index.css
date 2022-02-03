@@ -177,3 +177,9 @@ h1 {
   align-self: center;
   text-align: center;
 }
+
+.message {
+  align-self: center;
+  justify-self: center;
+  text-transform: capitalize;
+}

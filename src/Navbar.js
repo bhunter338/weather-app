@@ -6,7 +6,7 @@ const Navbar = () => {
       {/* <img class="logo" src="Images/logo.svg" alt="logo" /> */}
       <h1>Weather App</h1>
       <nav>
-        <ul class="nav-links">
+        <ul className="nav-links">
           <li>
             <a href="#">Current</a>
           </li>
@@ -15,7 +15,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <a class="cta" href="https://github.com/bhunter338">
+      <a className="cta" href="https://github.com/bhunter338">
         <button>Contact</button>
       </a>
     </header>

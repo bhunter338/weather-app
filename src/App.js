@@ -9,7 +9,6 @@ function App() {
   return (
     <main>
       <Navbar></Navbar>
-      <SearchBar></SearchBar>
       <CardContainer></CardContainer>
       <Footer></Footer>
     </main>
