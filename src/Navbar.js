@@ -1,6 +1,8 @@
 import React from "react";
+import { useGlobalContext } from "./context";
 
 const Navbar = () => {
+  const { navbarClick, mode } = useGlobalContext();
   return (
     <header>
       {/* <img class="logo" src="Images/logo.svg" alt="logo" /> */}
@@ -8,10 +10,24 @@ const Navbar = () => {
       <nav>
         <ul className="nav-links">
           <li>
-            <a href="#">Current</a>
+            <a
+              id="current"
+              className={mode === 0 ? "active" : ""}
+              onClick={navbarClick}
+              href="#"
+            >
+              Current
+            </a>
           </li>
           <li>
-            <a href="#">4-Day Forecast</a>
+            <a
+              id="forecast"
+              className={mode === 1 ? "active" : ""}
+              onClick={navbarClick}
+              href="#"
+            >
+              4-Day Forecast
+            </a>
           </li>
         </ul>
       </nav>

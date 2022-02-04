@@ -1,16 +1,21 @@
 import React from "react";
-import icon from "./images/snow.png";
 
-const Card = () => {
+const Card = ({ city, temp, description, icon, date, country }) => {
   return (
     <div className="card">
-      <h2 className="city">Istanbul</h2>
+      <h2 className="city">
+        <div>
+          {city}
+          <span>, {country}</span>
+        </div>
+      </h2>
       <div className="temp">
-        7<sup>°C</sup>
+        {temp}
+        <sup>°C</sup>
       </div>
       <img src={icon} alt="sun" />
-      <h3 className="description">heavy shower rain and drizzle</h3>
-      <h3 className="date">Tue, February 1, 2022</h3>
+      <h3 className="description">{description}</h3>
+      <h3 className="date">{date}</h3>
     </div>
   );
 };

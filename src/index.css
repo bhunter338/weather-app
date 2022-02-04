@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5);
+  /* outline: solid 0.25rem hsla(210, 100%, 100%, 0.5); */
 }
 html {
   height: 100%;
@@ -66,6 +66,9 @@ header {
 }
 
 .nav-links li a:hover {
+  color: #0088a9;
+}
+.active {
   color: #0088a9;
 }
 .cta button {
@@ -151,6 +154,16 @@ h1 {
   font-size: 2rem;
   align-self: center;
   margin-bottom: 1rem;
+}
+.city div {
+  text-transform: lowercase;
+}
+.city span {
+  text-transform: capitalize;
+}
+
+.city div::first-letter {
+  text-transform: uppercase;
 }
 
 .temp {
