@@ -57,7 +57,7 @@ const AppProvider = ({ children }) => {
 
   const FetchForecast = async () => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=9e87121062193484b74e868bba5232a1`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=9e87121062193484b74e868bba5232a1`
     )
       .then((response) => response.json())
       .then(async (data) => {
