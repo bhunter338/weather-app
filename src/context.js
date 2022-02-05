@@ -33,7 +33,7 @@ const AppProvider = ({ children }) => {
   const navbarClick = (e) => {
     e.preventDefault();
     setIsSuccess(true);
-    setName(city);
+    // setName(city);
     if (e.target.id === "current") {
       FetchApi();
       setMode(0);
@@ -65,7 +65,7 @@ const AppProvider = ({ children }) => {
           setIsSuccess(false);
           return;
         }
-        setName(city);
+        setName(data[0].name);
         setCountry(data[0].country);
 
         let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${data[0].lat}&lon=${data[0].lon}&exclude=minutely,hourly,current&units=metric&appid=9e87121062193484b74e868bba5232a1`;

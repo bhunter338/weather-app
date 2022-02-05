@@ -31,7 +31,10 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <a className="cta" href="https://github.com/bhunter338">
+      <a
+        className="cta"
+        href="https://www.linkedin.com/in/onur-bilginer-002b62190/"
+      >
         <button>Contact</button>
       </a>
     </header>
